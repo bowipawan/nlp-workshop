@@ -1,0 +1,197 @@
+[NeMo W 2022-08-17 13:42:24 optimizers:55] Apex was not found. Using the lamb or fused_adam optimizer will error out.
+[NeMo W 2022-08-17 13:42:30 experimental:28] Module <class 'nemo.collections.nlp.data.language_modeling.megatron.megatron_batch_samplers.MegatronPretrainingRandomBatchSampler'> is experimental, not ready for production and is not fully supported. Use at your own risk.
+[NeMo W 2022-08-17 13:42:30 experimental:28] Module <class 'nemo.collections.nlp.models.text_normalization_as_tagging.thutmose_tagger.ThutmoseTaggerModel'> is experimental, not ready for production and is not fully supported. Use at your own risk.
+[NeMo W 2022-08-17 13:43:59 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/pytorch_lightning/trainer/trainer.py:2302: LightningDeprecationWarning: `Trainer.weights_save_path` has been deprecated in v1.6 and will be removed in v1.8.
+      rank_zero_deprecation("`Trainer.weights_save_path` has been deprecated in v1.6 and will be removed in v1.8.")
+    
+[NeMo W 2022-08-17 13:43:59 exp_manager:896] The checkpoint callback was told to monitor a validation value and trainer's max_steps was set to -1. Please ensure that max_steps will run for at least 1 epochs to ensure that checkpointing will not error out.
+[NeMo W 2022-08-17 13:44:09 modelPT:216] You tried to register an artifact under config key=tokenizer.vocab_file but an artifact for it has already been registered.
+[NeMo W 2022-08-17 13:44:24 text_classification_dataset:251] Found 14 out of 20929 sentences with more than 510 subtokens. Truncated long sentences from the end.
+[NeMo W 2022-08-17 13:44:24 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py:566: UserWarning: This DataLoader will create 3 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+      cpuset_checked))
+    
+[NeMo W 2022-08-17 13:44:25 text_classification_dataset:251] Found 3 out of 2616 sentences with more than 510 subtokens. Truncated long sentences from the end.
+[NeMo W 2022-08-17 13:44:26 text_classification_dataset:251] Found 3 out of 2617 sentences with more than 510 subtokens. Truncated long sentences from the end.
+[NeMo W 2022-08-17 13:44:26 nlp_overrides:224] Apex was not found. Please see the NeMo README for installation instructions: https://github.com/NVIDIA/apex
+    Megatron-based models require Apex to function correctly.
+[NeMo W 2022-08-17 13:44:26 lm_utils:81] airesearch/wangchanberta-base-att-spm-uncased is not in get_pretrained_lm_models_list(include_external=False), will be using AutoModel from HuggingFace.
+[NeMo W 2022-08-17 13:44:37 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/torchmetrics/utilities/prints.py:36: UserWarning: Torchmetrics v0.9 introduced a new argument class property called `full_state_update` that has
+                    not been set for this class (ClassificationReport). The property determines if `update` by
+                    default needs access to the full metric state. If this is not the case, significant speedups can be
+                    achieved and we recommend setting this to `False`.
+                    We provide an checking function
+                    `from torchmetrics.utilities import check_forward_full_state_property`
+                    that can be used to check if the `full_state_update=True` (old and potential slower behaviour,
+                    default for now) or if `full_state_update=False` can be used safely.
+                    
+      warnings.warn(*args, **kwargs)
+    
+[NeMo W 2022-08-17 13:44:44 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 13:44:44 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 13:44:44 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 13:50:27 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 13:51:01 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 13:51:01 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 13:51:01 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 13:56:44 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 13:57:18 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 13:57:18 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 13:57:18 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:03:02 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:03:35 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:03:35 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:03:35 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:09:21 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:09:55 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:09:55 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:09:55 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:15:39 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:16:13 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:16:13 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:16:13 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:21:56 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:22:29 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:22:29 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:22:29 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:28:16 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:28:50 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:28:50 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:28:50 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:34:34 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:35:07 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:35:07 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:35:08 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:40:54 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:41:19 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:41:19 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:41:19 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:47:01 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:47:49 modelPT:216] You tried to register an artifact under config key=tokenizer.vocab_file but an artifact for it has already been registered.
+[NeMo W 2022-08-17 14:47:50 modelPT:149] If you intend to do training or fine-tuning, please call the ModelPT.setup_training_data() method and provide a valid configuration file to setup the train data loader.
+    Train config : 
+    file_path: /content/drive/MyDrive/NLP_Workshop/NLP_Workshop_Content/data/train_nemo.tsv
+    batch_size: 16
+    shuffle: true
+    num_samples: -1
+    num_workers: 3
+    drop_last: false
+    pin_memory: true
+    
+[NeMo W 2022-08-17 14:47:50 modelPT:156] If you intend to do validation, please call the ModelPT.setup_validation_data() or ModelPT.setup_multiple_validation_data() method and provide a valid configuration file to setup the validation data loader(s). 
+    Validation config : 
+    file_path: /content/drive/MyDrive/NLP_Workshop/NLP_Workshop_Content/data/val_nemo.tsv
+    batch_size: 16
+    shuffle: false
+    num_samples: -1
+    num_workers: 1
+    drop_last: false
+    pin_memory: true
+    
+[NeMo W 2022-08-17 14:47:50 modelPT:162] Please call the ModelPT.setup_test_data() or ModelPT.setup_multiple_test_data() method and provide a valid configuration file to setup the test data loader(s).
+    Test config : 
+    file_path: /content/drive/MyDrive/NLP_Workshop/NLP_Workshop_Content/data/test_nemo.tsv
+    batch_size: 16
+    shuffle: false
+    num_samples: -1
+    num_workers: 1
+    drop_last: false
+    pin_memory: true
+    
+[NeMo W 2022-08-17 14:47:50 nlp_overrides:224] Apex was not found. Please see the NeMo README for installation instructions: https://github.com/NVIDIA/apex
+    Megatron-based models require Apex to function correctly.
+[NeMo W 2022-08-17 14:47:50 lm_utils:81] airesearch/wangchanberta-base-att-spm-uncased is not in get_pretrained_lm_models_list(include_external=False), will be using AutoModel from HuggingFace.
+[NeMo W 2022-08-17 14:47:57 modelPT:216] You tried to register an artifact under config key=tokenizer.vocab_file but an artifact for it has already been registered.
+[NeMo W 2022-08-17 14:47:59 text_classification_dataset:251] Found 3 out of 2617 sentences with more than 510 subtokens. Truncated long sentences from the end.
+[NeMo W 2022-08-17 14:48:00 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:48:14 text_classification_dataset:251] Found 3 out of 2617 sentences with more than 510 subtokens. Truncated long sentences from the end.
+[NeMo W 2022-08-17 14:48:14 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:48:14 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
+[NeMo W 2022-08-17 14:48:14 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/nemo/collections/nlp/data/text_classification/text_classification_dataset.py:203: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+      torch.LongTensor(padded_input_ids),
+    
